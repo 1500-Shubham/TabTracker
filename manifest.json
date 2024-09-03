@@ -1,0 +1,34 @@
+{
+  "name": "My ScreenActions Bookmarks",
+  "version": "0.1.0",
+  "description": "Generating Screen Actions like click, inputs through html",
+  "permissions": ["storage", "tabs","scripting"],
+  "host_permissions": ["https://*/*"],
+  "background": {
+      "service_worker": "background.js"
+  },
+  "content_scripts": [
+      {
+          "matches": ["https://*/*"],
+          "js": ["contentScript.js"]
+      }
+  ],
+  "web_accessible_resources": [
+      {
+          "resources": [
+              "assets/developer.png"
+          ],
+          "matches": ["https://*/*"]
+      }
+  ],
+  "action": {
+      "default_icon": {
+          "16": "assets/developer.png",
+          "24": "assets/developer.png",
+          "32": "assets/developer.png"
+      },
+      "default_title": "My ScreenActions Bookmarks",
+      "default_popup": "popup.html"
+  },
+  "manifest_version": 3
+}

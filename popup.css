@@ -1,0 +1,60 @@
+.container {
+  height: 200px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: #f3f3f3;
+  flex-direction: column;
+  margin: 0;
+}
+
+.main {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  transition: transform 0.2s;
+  width: 500px;
+  text-align: center;
+}
+
+h1 {
+  color: #000000;
+}
+
+button {
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #4CAF50;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #74d879; /* New background color on hover */
+}
+button.stop:disabled {
+  background-color: #cccccc; /* Background color when disabled */
+  cursor: not-allowed; /* Cursor style when disabled */
+  opacity: 0.6; /* Opacity when disabled */
+}
+button.start:disabled {
+  background-color: #cccccc; /* Background color when disabled */
+  cursor: not-allowed; /* Cursor style when disabled */
+  opacity: 0.6; /* Opacity when disabled */
+}
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
